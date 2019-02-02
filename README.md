@@ -9,7 +9,7 @@ Fast start:
 -p 8546:8546 -p 30303:30303  -p 30303:30303/udp \ 
 parity/parity:v2.1.3 --ui-interface all --jsonrpc-interface all 
 ```
-Full start(with docker volume) - [eth.sh](https://github.com/button-tech/devops-nodes/blob/master/eth.sh)
+Full start(with docker volume) - [eth_etc.sh](https://github.com/button-tech/devops-nodes/blob/master/eth_etc.sh)
 
 - Disk space used ~ 100GB
 
@@ -33,8 +33,9 @@ Fast start:
 parity/parity:v2.1.3 --ui-interface all --jsonrpc-interface all \
  --chain classic 
 ```
-Full start(with docker volume) - [etc.sh](https://github.com/button-tech/devops-nodes/blob/master/etc.sh)
+Full start(with docker volume) - [eth_etc.sh](https://github.com/button-tech/devops-nodes/blob/master/eth_etc.sh)
 
+(Add the "--chain classic" flag to the end of the script)
 
 - Disk space used ~ 146GB
 
@@ -57,6 +58,9 @@ Virtual machine specifications:
 # cd bitcore-docker
 # sudo docker-compose up --build -d
 ```
+
+Or use this -  [btc.sh](https://github.com/button-tech/devops-nodes/blob/master/btc.sh)
+
 
 - Disk space used ~ 443GB
 
