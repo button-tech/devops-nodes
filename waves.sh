@@ -1,7 +1,7 @@
 #!/bin/bash
 # for debian 9 (stretch)
 
-DockerVolumeName=dvn
+DockerVolumeName=waves
 
 # install docker
 apt update

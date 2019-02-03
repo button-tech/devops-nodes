@@ -13,7 +13,7 @@ apt install docker-ce
 apt install docker-compose
 
 # install git
-apt install git
+# apt install git
 
 
 git clone https://github.com/WooGenius/bitcore-docker

@@ -2,7 +2,7 @@
 # for debian 9 (stretch)
 
 ConteinerName=name
-DockerVolumeName=dvn
+DockerVolumeName=${VARIABLE:-default}
 
 # install docker
 apt update
@@ -15,7 +15,7 @@ sudo apt update
 sudo apt install docker-ce
 
 # install git
-apt install git
+# apt install git
 
 # clone parity rep
 git clone https://github.com/paritytech/parity-ethereum.git
