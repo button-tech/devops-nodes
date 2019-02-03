@@ -1,6 +1,4 @@
 #!/bin/bash
-
-#!/bin/sh
 # for debian 9 (stretch)
 
 ConteinerName=local/etc
