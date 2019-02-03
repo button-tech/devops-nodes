@@ -5,7 +5,7 @@ Guide how to set up your full node for BTC/BTH/ETH/ETC/LTC
 
 Fast start:
 ```
-# sudo docker run --restart=always -ti -d -p 8545:8545 \ 
+# docker run --restart=always -ti -d -p 8545:8545 \ 
 -p 8546:8546 -p 30303:30303  -p 30303:30303/udp \ 
 parity/parity:v2.1.3 --ui-interface all --jsonrpc-interface all 
 ```
@@ -28,7 +28,7 @@ Virtual machine specifications:
 
 Fast start:
 ```
-# sudo  docker run --restart=always -ti -d -p 8545:8545 \ 
+# docker run --restart=always -ti -d -p 8545:8545 \ 
 -p 8546:8546 -p 30303:30303 -p 30303:30303/udp \ 
 parity/parity:v2.1.3 --ui-interface all --jsonrpc-interface all \
  --chain classic 
@@ -56,7 +56,7 @@ Virtual machine specifications:
 ```
 # git clone https://github.com/WooGenius/bitcore-docker
 # cd bitcore-docker
-# sudo docker-compose up --build -d
+# docker-compose up --build -d
 ```
 
 Or use this -  [btc.sh](https://github.com/button-tech/devops-nodes/blob/master/btc.sh)
@@ -79,7 +79,7 @@ Virtual machine specifications:
 ## LTC(Insight-api)
 
 ```
-# sudo docker run -e LITECOIN_LIVENET=1 -d -p 3001:3001 -p 9333:9333 \ 
+# docker run -e LITECOIN_LIVENET=1 -d -p 3001:3001 -p 9333:9333 \ 
 -v your_volume:/root/litecoin-node/livenet \
 --name litecoin-livenet berrywallet/litecore-node
 ```
