@@ -17,11 +17,6 @@ sudo apt install docker-ce
 # install git
 apt install git
 
-
-# create docker volume
-docker volume create $DockerVolumeName
-
-
 # clone parity rep
 git clone https://github.com/paritytech/parity-ethereum.git
 cd parity-ethereum
@@ -29,6 +24,7 @@ cp scripts/docker/alpine/Dockerfile .
 docker build -t $ConteinerName .
 
 
+docker volume create $DockerVolumeName
 
 docker run --restart always -ti -d \
 -p 8180:8180 -p 8545:8545 -p 8546:8546 -p 30303:30303 -p 30303:30303/udp \

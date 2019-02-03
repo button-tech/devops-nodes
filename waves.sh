@@ -13,8 +13,5 @@ add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(
 sudo apt update
 sudo apt install docker-ce
 
-
 docker create volume $DockerVolumeName
-docker run -e LITECOIN_LIVENET=1 -d -p 3001:3001 -p 9333:9333 \
--v $DockerVolumeName:/root/litecoin-node/livenet \
---name litecoin-livenet berrywallet/litecore-node
+docker run -d -p 6869:6869 -p 6868:6868 -e WAVES_NETWORK=MAINNET -e WAVES_LOG_LEVEL=DEBUG -e WAVES_HEAP_SIZE=2g -v $DockerVolumeName:/waves wavesplatform/node

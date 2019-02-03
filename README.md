@@ -80,7 +80,7 @@ Virtual machine specifications:
 
 ```
 # sudo docker run -e LITECOIN_LIVENET=1 -d -p 3001:3001 -p 9333:9333 \ 
--v /root/litecoin-node/livenet:/path/to/dir \
+-v your_volume:/root/litecoin-node/livenet \
 --name litecoin-livenet berrywallet/litecore-node
 ```
 
@@ -96,3 +96,13 @@ Virtual machine specifications:
 - RAM: 4GB
 
 - Disk space: 500GB
+
+## Waves 
+
+```
+# docker run -d -p 6869:6869 -p 6868:6868 -e WAVES_NETWORK=MAINNET \ 
+ -e WAVES_LOG_LEVEL=DEBUG -e WAVES_HEAP_SIZE=2g -v your_volume:/waves wavesplatform/node
+```
+
+
+
