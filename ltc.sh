@@ -15,4 +15,4 @@ sudo apt install docker-ce
 
 
 docker create volume $DockerVolumeName
-docker run  --restart always -e LITECOIN_LIVENET=1 -d -p 3001:3001 -p 9333:9333 \ -v $DockerVolumeName:/root/litecoin-node/data --name litecoin-livenet berrywallet/litecore-node
+docker run  --restart always -e LITECOIN_LIVENET=1 -d -p 3001:3001 -p 9333:9333 -v $DockerVolumeName:/root/litecoin-node/data --name litecoin-livenet berrywallet/litecore-node
