@@ -80,7 +80,7 @@ Virtual machine specifications:
 
 ```
 # docker run -e LITECOIN_LIVENET=1 -d -p 3001:3001 -p 9333:9333 \ 
--v your_volume:/root/litecoin-node/livenet \
+-v your_volume:/root/litecoin-node/data \
 --name litecoin-livenet berrywallet/litecore-node
 ```
 
