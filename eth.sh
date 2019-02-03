@@ -1,8 +1,10 @@
+#!/bin/bash
+
 #!/bin/sh
 # for debian 9 (stretch)
 
-ConteinerName=name
-DockerVolumeName=${VARIABLE:-default}
+ConteinerName=local/eth
+DockerVolumeName=eth
 
 # install docker
 apt update
@@ -39,6 +41,3 @@ $ConteinerName:latest \
 --db-compaction hdd \
 --mode active --cache-size 4096 \
 --ui-interface 0.0.0.0
-
-# --chain classic - for ETC
-docker logs --follow parity
