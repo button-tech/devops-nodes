@@ -1,5 +1,5 @@
 # Devops-nodes
-Guide how to set up your full node for BTC/ETH/ETC/LTC/Waves
+Guide how to set up your full node for BTC/BCH/ETH/ETC/LTC/Waves
 
 ## ETH(Parity)
 
