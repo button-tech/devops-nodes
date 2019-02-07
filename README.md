@@ -113,7 +113,7 @@ Dependencies install
 
 # apt-get install cmake
 
-3. G++
+3. g++
 
 # apt-get install g++
 
