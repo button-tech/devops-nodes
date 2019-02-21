@@ -146,6 +146,10 @@ After create appsettings.json
 # docker run -d -p 6869:6869 -p 6868:6868 -e WAVES_NETWORK=MAINNET \ 
  -e WAVES_LOG_LEVEL=DEBUG -e WAVES_HEAP_SIZE=2g -v your_volume:/waves wavesplatform/node
 ```
+## Stellar
 
+```
+# docker run -d -p "8000:8000" -v your_volume:/stellar --name stellar stellar/quickstart --pubnet
+```
 
 
