@@ -6,7 +6,6 @@ apt update
 apt upgrade
 
 # Install git
-install git
 apt install git
 
 # Install tmux
