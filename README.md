@@ -9,7 +9,11 @@ Fast start:
 -p 8546:8546 -p 30303:30303  -p 30303:30303/udp \ 
 parity/parity:v2.1.3 --ui-interface all --jsonrpc-interface all 
 ```
-Full start(with docker volume) - [eth.sh](https://github.com/button-tech/devops-nodes/blob/master/eth.sh)
+Full start(with docker volume) - [eth.sh](https://github.com/button-tech/devops-nodes/blob/master/parity.sh)
+
+```
+# ./parity.sh eth
+```
 
 - Disk space used ~ 100GB
 
@@ -33,7 +37,11 @@ Fast start:
 parity/parity:v2.1.3 --ui-interface all --jsonrpc-interface all \
  --chain classic 
 ```
-Full start(with docker volume) - [etc.sh](https://github.com/button-tech/devops-nodes/blob/master/etc.sh)
+Full start(with docker volume) - [parity.sh](https://github.com/button-tech/devops-nodes/blob/master/parity.sh)
+
+```
+# ./parity.sh etc
+```
 
 (Add the "--chain classic" flag to the end of the script)
 
