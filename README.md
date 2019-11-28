@@ -9,7 +9,7 @@ Fast start:
 -p 8546:8546 -p 30303:30303  -p 30303:30303/udp \ 
 parity/parity:v2.1.3 --ui-interface all --jsonrpc-interface all 
 ```
-Full start(with docker volume) - [eth.sh](https://github.com/button-tech/devops-nodes/blob/master/parity.sh)
+Full start(with docker volume) - [parity.sh](https://github.com/button-tech/devops-nodes/blob/master/parity.sh)
 
 ```
 # ./parity.sh eth
